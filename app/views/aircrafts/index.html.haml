@@ -1,0 +1,7 @@
+%div.container
+  %div.row
+    %div.col-xs-12.col-sm-12.col-md-12.col-lg-12.mx-auto.mb-2
+      %ul.list-group
+        - @aircrafts.each do |aircraft|
+          %li.list-group.item
+            = link_to aircraft.name, aircraft
