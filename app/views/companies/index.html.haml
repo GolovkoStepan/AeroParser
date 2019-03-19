@@ -1,7 +1,5 @@
-%div.container
-  %div.row
-    %div.col-xs-12.col-sm-12.col-md-12.col-lg-12.mx-auto.mb-2
-      %ul.list-group
-        - @companies.each do |company|
-          %li.list-group.item
-            = link_to company.name, company
+%div.col-xs-12.col-sm-12.col-md-12.col-lg-12.mx-auto.mb-2
+  %ul.list-group
+    - @companies.each do |company|
+      %li.list-group.item
+        = link_to company.name, company
