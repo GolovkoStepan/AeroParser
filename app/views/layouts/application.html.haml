@@ -11,19 +11,18 @@
 
   %body
 
-    %div.d-flex.flex-column.flex-md-row.align-items-center.p-3.px-md-4.mb-3.bg-white.border-bottom.shadow-sm
+    .d-flex.flex-column.flex-md-row.align-items-center.p-3.px-md-4.mb-3.bg-white.border-bottom.shadow-sm
       %h5.my-0.mr-md-auto.font-weight-normal AeroParser
       %nav.my-2.my-md-0.mr-md-3
-        = link_to 'Компании', companies_path, class: current_page?(companies_path) || current_page?(root_path) ? "btn btn-primary" : "p-2 text-dark"
-        = link_to 'Самолеты', aircrafts_path, class: current_page?(aircrafts_path) ? "btn btn-primary" : "p-2 text-dark"
-        = link_to 'Города', cities_path, class: current_page?(cities_path) ? "btn btn-primary" : "p-2 text-dark"
+        = link_to 'Компании', companies_path, class: current_page?(companies_path) || current_page?(root_path) ? "btn btn-outline-primary" : "p-2 text-dark"
+        = link_to 'Самолеты', aircrafts_path, class: current_page?(aircrafts_path) ? "btn btn-outline-primary" : "p-2 text-dark"
+        = link_to 'Города', cities_path, class: current_page?(cities_path) ? "btn btn-outline-primary" : "p-2 text-dark"
 
-    %div.wrapper
-      %div.container
-        %div.row
+    .wrapper
+      .container
+        .row
           = yield
 
-  %footer.pt-2.my-md-4.pt-md-4.border-top
-    %div.row
-      %div.col-12.col-md
-        %p.d-block.mb-2.text-center &copy; 2019
+    %footer.border-top
+      .container
+        %p.text-center.mt-3 &copy; 2019

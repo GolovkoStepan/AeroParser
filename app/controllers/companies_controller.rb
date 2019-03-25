@@ -5,9 +5,6 @@ class CompaniesController < ApplicationController
 
   def show
     @company = Company.find(params[:id])
-
-    @aircrafts = @company.aircrafts
-    @cities = @company.cities
   end
 
 end

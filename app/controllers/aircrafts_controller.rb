@@ -5,8 +5,5 @@ class AircraftsController < ApplicationController
 
   def show
     @aircraft = Aircraft.find(params[:id])
-
-    @companies = @aircraft.companies
-    @cities = @aircraft.cities
   end
 end

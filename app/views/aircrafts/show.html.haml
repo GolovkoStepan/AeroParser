@@ -1,21 +1,21 @@
-%div.container.mb-4
-  %div.row
-    %div.col-md-12
+.container.mb-4
+  .row
+    .col-md-12
       %h2.text-center Самолет "#{@aircraft.name}"
 
-%div.container
-  %div.row
-    %div.col-xs-6.col-sm-6.col-md-6.col-lg-6.mx-auto.mb-2
+.container
+  .row
+    .col-xs-6.col-sm-6.col-md-6.col-lg-6.mx-auto.mb-2
       %h4.text-center Компании
       %hr
       %ul.list-group
-        - @companies.each do |company|
+        - @aircraft.companies.each do |company|
           %li.list-group.item
             = link_to company.name, company
-    %div.col-xs-6.col-sm-6.col-md-6.col-lg-6.mx-auto.mb-2
+    .col-xs-6.col-sm-6.col-md-6.col-lg-6.mx-auto.mb-2
       %h4.text-center Города
       %hr
       %ul.list-group
-        - @cities.each do |city|
+        - @aircraft.cities.each do |city|
           %li.list-group.item
             = link_to city.name, city
